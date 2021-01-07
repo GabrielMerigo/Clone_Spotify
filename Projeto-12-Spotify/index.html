@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">    <title>Spotify</title>
+</head>
+<body>
+<div class="container">
+    <div class="sidebar">
+        <div class="logo">
+            <img src="img/spotify.png" alt="">
+        </div><!--logo-->
+        <div class="options">
+            <div style="color:white; background-color: #282828;" class="option__single"><i class="fas fa-home"></i><p>Home</p></div>
+            <div class="option__single"><i class="fas fa-search"></i><p>Search</p></div>
+            <div class="option__single"><i class="fas fa-book-open"></i><p>Your Library</p></div>
+        </div>
+        <div class="playlists">
+            <h3>PLAYLISTS</h3>
+            <div class="more"><p>+</p><h3>Create Playlist</h3></div>
+            <div class="liked"><i class="fas fa-heart"></i><h3>Liked Songs</h3></div>
+            <div class="line"></div>
+        </div>
+        
+    </div><!--sidebar-->
+    
+    <div class="main">
+        <div class="main__row__tiltle"><h2>Para acompanhar seu dia</h2></div>
+        <div id="boxies" class="boxies">
+            
+            <div class="box-single">
+                <img src="img/top50.jpg" alt="">
+                <h4>O melhor do MP3</h4>
+                <p>Fique de bem com a vida com grandes artistas</p>
+            </div>
+            
+            <div class="box-single">
+                <img src="img/top50.jpg" alt="">
+                <h4>O melhor do MP3</h4>
+                <p>Fique de bem com a vida com grandes artistas</p>
+            </div>
+
+            <div class="box-single">
+                <img src="img/top50.jpg" alt="">
+                <h4>O melhor do MP3</h4>
+                <p>Fique de bem com a vida com grandes artistas</p>
+            </div>
+            
+            <div class="box-single">
+                <img src="img/top50.jpg" alt="">
+                <h4>O melhor do MP3</h4>
+                <p>Fique de bem com a vida com grandes artistas</p>
+            </div>
+            
+            <div class="box-single">
+                <img src="img/top50.jpg" alt="">
+                <h4>O melhor do MP3</h4>
+                <p>Fique de bem com a vida com grandes artistas</p>
+            </div>
+            
+            <div class="box-single">
+                <img src="img/top50.jpg" alt="">
+                <h4>O melhor do MP3</h4>
+                <p>Fique de bem com a vida com grandes artistas</p>
+            </div>
+
+            <div class="box-single">
+                <img src="img/top50.jpg" alt="">
+                <h4>O melhor do MP3</h4>
+                <p>Fique de bem com a vida com grandes artistas</p>
+            </div>
+
+            <div class="box-single">
+                <img src="img/top50.jpg" alt="">
+                <h4>O melhor do MP3</h4>
+                <p>Fique de bem com a vida com grandes artistas</p>
+            </div>
+
+            <div class="box-single">
+                <img src="img/top50.jpg" alt="">
+                <h4>O melhor do MP3</h4>
+                <p>Fique de bem com a vida com grandes artistas</p>
+            </div>
+            
+            <div class="main-wrapper"></div>
+        </div>
+
+        <div class="main__row__tiltle"><h2>Minhas Músicas</h2></div>
+        
+        <div class="box-single" data-image="img/vriginia.jpg" data-artist="Zé Felipe" data-song="Virginia" data-file="img/zé.mp3">
+            <img src="img/vriginia.jpg" alt="">
+            <h4>Virginia</h4>
+            <p>Zé Felipe</p>
+        </div>  
+        
+        <div class="box-single" data-image="img/anyone.jpg" data-artist="Justin Bieber" data-song="Anyone" data-file="img/anyone.mp3">
+            <img src="img/anyone.jpg"  alt="">
+            <h4>Anyone</h4>
+            <p>Justin Bieber</p>
+        </div>
+
+        <div class="main-wrapper"></div>
+    </div><!--main-->
+</div><!--container-->
+
+<div class="player">
+    <div class="player__artist">
+        
+    </div>
+    <div class="player__control">
+        <div class="player__control__btns">
+            <a href="#"><i class="fas fa-backward"></i></a>
+            <a id="playBtn" href="#"><i class="far fa-play-circle"></i></a>
+            <a id="pauseBtn" style="display: none;" href="#"><i class="far fa-pause-circle"></i></a>
+            <a href="#"><i class="fas fa-forward"></i></a>
+        </div>
+
+        <div class="player__control__progress">
+            <div class="player__control__progress2"></div>
+        </div>
+    </div>
+</div>
+
+<audio id="audioPlayer" style="position: absolute; top:0; left:0; z-index: -11;" controls=""></audio>
+
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/f6c2ae9ac5.js" crossorigin="anonymous"></script>
+</body>
+</html>
